@@ -1,7 +1,7 @@
 //Const Variables
-const wordOptions = ["LEBRON JAMES", "MICHAEL JORDAN", "TIGER WOODS", "SERENA WILLIAMS", 
-"LYDIA KO", "PATRICK MAHOMES", "FLOYD MAYWEATHER", "TOM BRADY", "KEVIN DURANT", "KYRIE IRVING", 
-"VENUS WILLIAMS", "LIONEL MESSI", "CRISTIANO RONALDO",];
+const wordOptions = ["LEBRON JAMES", "MICHAEL JORDAN", "TIGER WOODS", "SERENA WILLIAMS",
+    "LYDIA KO", "PATRICK MAHOMES", "FLOYD MAYWEATHER", "TOM BRADY", "KEVIN DURANT", "KYRIE IRVING",
+    "VENUS WILLIAMS", "LIONEL MESSI", "CRISTIANO RONALDO",];
 const word = wordOptions[Math.floor(Math.random() * wordOptions.length)];
 const startGame = document.querySelector("#start-game");
 const messageBoard = document.querySelector("#message-board");
@@ -61,16 +61,16 @@ function handleClick(e) {
         for (let i = 0; i < randomWord.length; i++) {
             if (randomWord.charAt(i) === letter) {
                 correctWord += letter;
-                
+
             } else {
                 correctWord += guessWord.charAt(i);
                 incorrectGuesses.push(guessWord);
-            } 
+            }
         }
-        guessWord = correctWord; 
-     } else { 
+        guessWord = correctWord;
+    } else {
         counter++;
-    } 
+    }
     renderGuessWord();
     winner();
 }
@@ -80,25 +80,8 @@ function winner() {
     if (guessWord === randomWord) {
         winLogic.innerHTML = ("You Win!!!");
         document.querySelector("#letters").removeEventListener("click", handleClick);
-    } else if ( counter === 5) {
-        winLogic.innerHTML = ( "You Lose :(");
-    document.querySelector("#letters").removeEventListener("click", handleClick);
-    }   
+    } else if (counter === 5) {
+        winLogic.innerHTML = ("You Lose :(");
+        document.querySelector("#letters").removeEventListener("click", handleClick);
+    }
 }
-
-
-  
-  
-  
-  
-
-
-
-
-
-
-
-
-
-
-
