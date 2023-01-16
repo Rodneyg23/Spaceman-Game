@@ -1,6 +1,8 @@
 # Spaceman-Game
 
-<img width="1401" alt="Screen Shot 2023-01-09 at 2 39 22 AM" src="https://user-images.githubusercontent.com/120343857/211268769-0d3534df-4214-44c0-93b6-0a4a4d6d1ba4.png">
+<img width="1394" alt="Screen Shot 2023-01-13 at 7 25 20 AM" src="https://user-images.githubusercontent.com/120343857/212581205-7f787152-d1dc-41e6-a3c8-aa0e79b0a891.png">
+
+
 
 1. HTML
 
