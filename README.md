@@ -32,6 +32,7 @@ Javascript
 ```
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="./style.css" />
     <meta charset="UTF-8">
@@ -40,148 +41,163 @@ Javascript
     <script src="./index.js" defer></script>
     <title>Spaceman</title>
 </head>
+
 <body>
     <h1>Spaceman</h1>
-        <h2>Famous Athletes Edition</h2> <br>
-             <h1 class="win"></h1>
+    <h2>Famous Athletes Edition</h2> <br>
+    <h1 class="win"></h1>
 
-    <h3 class="result"></h3>
-        <div
-            id="game-board">
-        <button id="start-game"type="button">Start Game</button>
-             </div> <br>
-        <div>
-            <button id="reset-game"type="button">Reset Game</button> <br> <br>
-                </div>
-     
-     
+    <div id="game-board">
+        <button id="start-game" type="button">Start Game</button>
+    </div>
+    <br>
+    <div>
+        <button id="clear-game" type="button" onClick="window.location.reload()">
+            Clear Game</button> <br> <br>
+    </div>
 
-     <p>To become a real astronaut you have to first unlock the correct word 
+    <p>To become a real astronaut you have to first unlock the correct word
         to travel into space!</p>
-    
-
-     <section id="letters">
-     <button type="button">A</button>
-     <button type="button">B</button>
-     <button type="button">C</button>
-     <button type="button">D</button>
-     <button type="button">E</button>
-     <button type="button">F</button>
-     <button type="button">G</button>
-     <button type="button">H</button>
-     <button type="button">I</button>
-     <button type="button">J</button>
-     <button type="button">K</button>
-     <button type="button">L</button>
-     <button type="button">M</button>
-     <button type="button">N</button>
-     <button type="button">O</button>
-     <button type="button">P</button>
-     <button type="button">Q</button>
-     <button type="button">R</button>
-     <button type="button">S</button>
-     <button type="button">T</button>
-     <button type="button">U</button>
-     <button type="button">V</button>
-     <button type="button">W</button>
-     <button type="button">X</button>
-     <button type="button">Y</button>
-     <button type="button">Z</button>
-</section>
-     <div id="message-board"></div>
-
-        <div id="guess counter">0</div>
-     
-            <div id="spaceman">This is the spaceman</div>
-
-                <div class="lettersContainer"></div>
 
 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M370.7 96.1C346.1 39.5 289.7 0 224 0S101.9 39.5 77.3 96.1C60.9 97.5 48 111.2 48 128v64c0 16.8 12.9 30.5 29.3 31.9C101.9 280.5 158.3 320 224 320s122.1-39.5 146.7-96.1c16.4-1.4 29.3-15.1 29.3-31.9V128c0-16.8-12.9-30.5-29.3-31.9zM336 144v16c0 53-43 96-96 96H208c-53 0-96-43-96-96V144c0-26.5 21.5-48 48-48H288c26.5 0 48 21.5 48 48zM189.3 162.7l-6-21.2c-.9-3.3-3.9-5.5-7.3-5.5s-6.4 2.2-7.3 5.5l-6 21.2-21.2 6c-3.3 .9-5.5 3.9-5.5 7.3s2.2 6.4 5.5 7.3l21.2 6 6 21.2c.9 3.3 3.9 5.5 7.3 5.5s6.4-2.2 7.3-5.5l6-21.2 21.2-6c3.3-.9 5.5-3.9 5.5-7.3s-2.2-6.4-5.5-7.3l-21.2-6zM112.7 316.5C46.7 342.6 0 407 0 482.3C0 498.7 13.3 512 29.7 512H128V448c0-17.7 14.3-32 32-32H288c17.7 0 32 14.3 32 32v64l98.3 0c16.4 0 29.7-13.3 29.7-29.7c0-75.3-46.7-139.7-112.7-165.8C303.9 338.8 265.5 352 224 352s-79.9-13.2-111.3-35.5zM176 448c-8.8 0-16 7.2-16 16v48h32V464c0-8.8-7.2-16-16-16zm96 32c8.8 0 16-7.2 16-16s-7.2-16-16-16s-16 7.2-16 16s7.2 16 16 16z"/></svg>
+    <section id="letters">
+        <button type="button">A</button>
+        <button type="button">B</button>
+        <button type="button">C</button>
+        <button type="button">D</button>
+        <button type="button">E</button>
+        <button type="button">F</button>
+        <button type="button">G</button>
+        <button type="button">H</button>
+        <button type="button">I</button>
+        <button type="button">J</button>
+        <button type="button">K</button>
+        <button type="button">L</button>
+        <button type="button">M</button>
+        <button type="button">N</button>
+        <button type="button">O</button>
+        <button type="button">P</button>
+        <button type="button">Q</button>
+        <button type="button">R</button>
+        <button type="button">S</button>
+        <button type="button">T</button>
+        <button type="button">U</button>
+        <button type="button">V</button>
+        <button type="button">W</button>
+        <button type="button">X</button>
+        <button type="button">Y</button>
+        <button type="button">Z</button>
+    </section>
+
+    <div id="message-board"></div>
+    <div id="counter">0</div>
+    <div id="spaceman">This is the spaceman</div>
+    <div class="lettersContainer"></div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, 
+Inc. -->
+        <path
+            d="M370.7 96.1C346.1 39.5 289.7 0 224 0S101.9 39.5 77.3 96.1C60.9 97.5 48 111.2 48 128v64c0 16.8 12.9 30.5 29.3 31.9C101.9 280.5 158.3 320 224 320s122.1-39.5 146.7-96.1c16.4-1.4 29.3-15.1 29.3-31.9V128c0-16.8-12.9-30.5-29.3-31.9zM336 
+144v16c0 53-43 96-96 96H208c-53 0-96-43-96-96V144c0-26.5 21.5-48 48-48H288c26.5 0 48 21.5 48 48zM189.3 162.7l-6-21.2c-.9-3.3-3.9-5.5-7.3-5.5s-6.4 2.2-7.3 5.5l-6 21.2-21.2 6c-3.3 .9-5.5 3.9-5.5 7.3s2.2 6.4 5.5 7.3l21.2 6 6 21.2c.9 3.3 3.9 5.5 7.3 
+5.5s6.4-2.2 7.3-5.5l6-21.2 21.2-6c3.3-.9 5.5-3.9 5.5-7.3s-2.2-6.4-5.5-7.3l-21.2-6zM112.7 316.5C46.7 342.6 0 407 0 482.3C0 498.7 13.3 512 29.7 512H128V448c0-17.7 14.3-32 32-32H288c17.7 0 32 14.3 32 32v64l98.3 0c16.4 0 29.7-13.3 29.7-29.7c0-75.3-46.7-139.
+7-112.7-165.8C303.9 338.8 265.5 352 224 352s-79.9-13.2-111.3-35.5zM176 448c-8.8 0-16 7.2-16 16v48h32V464c0-8.8-7.2-16-16-16zm96 32c8.8 0 16-7.2 16-16s-7.2-16-16-16s-16 7.2-16 16s7.2 16 16 16z" />
+    </svg>
 
 
 </body>
+
 </html>
 ```
 
 2. Javascript
 ```
 //Const Variables
-const wordOptions = ["LEBRON JAMES", "MICHAEL JORDAN", "TIGER WOODS", "SERENA WILLIAMS", "LYDIA KO", "PATRICK MAHOMES"];
+const wordOptions = ["LEBRON JAMES", "MICHAEL JORDAN", "TIGER WOODS", "SERENA WILLIAMS",
+    "LYDIA KO", "PATRICK MAHOMES", "FLOYD MAYWEATHER", "TOM BRADY", "KEVIN DURANT", "KYRIE IRVING",
+    "VENUS WILLIAMS", "LIONEL MESSI", "CRISTIANO RONALDO",];
 const word = wordOptions[Math.floor(Math.random() * wordOptions.length)];
-const startGame = document.querySelector("#start-game")
-const messageBoard = document.querySelector("#message-board")
-const resetGame = document.querySelector("#reset-game")
-const quitGame = document.querySelector("#quit-game")
-const lettersButton = document.querySelectorAll("#letters > button")
-const storeGuesses = document.querySelector("#spaceman")
-const numberOfGuesses = 0
+const startGame = document.querySelector("#start-game");
+const messageBoard = document.querySelector("#message-board");
+const clearGame = document.querySelector("#clear-game");
+const quitGame = document.querySelector("#quit-game");
+const lettersButton = document.querySelectorAll("#letters > button");
+const wordSpaces = document.querySelector("#spaceman");
+const winLogic = document.querySelector(".win");
+const lossCounter = document.querySelector("#counter");
+incorrectGuesses = [];
 
 //Button to start game
-startGame.addEventListener("click", newRandomWord)
-//Button to reset current game
-resetGame.addEventListener("click", newRandomWord)
-
+startGame.addEventListener("click", newRandomWord);
+//Button to clear game board
+clearGame.addEventListener("click", newRandomWord,);
+//letters button responding to clicks
+document.querySelector("#letters").addEventListener("click", handleClick);
 
 // Assigned randomWord variable
-let randomWord = null
+let randomWord = null;
 // Users word to guess
-let guessWord 
-
-
-
+let guessWord;
+// represent the empty string.
+let correctWord;
+// counter for incorrect letter choices
+let counter = 0;
 
 //Function used to generate new word a random.
 function newRandomWord() {
     randomWord = wordOptions[Math.floor(Math.random() * wordOptions.length)];
-    console.log("thisIsTheRandomWord =>", randomWord)
-    guessWord = ""
-//Creating the input spaces for the letters
+    console.log("thisIsTheRandomWord =>", randomWord);
+    guessWord = "";
+
+    //Creating the input spaces for the letters
     for (let char of randomWord) {
-        console.log(char)
-        if(char === " ") {
-            guessWord = guessWord + char; 
+        console.log(char);
+        if (char === " ") {
+            guessWord = guessWord + char;
         } else {
             guessWord = guessWord + "_";
+        }
     }
-} 
-
-
-renderguessWord()
+    renderGuessWord();
 }
-
 
 //display the guess word 
-function renderguessWord() {
-   storeGuesses.textContent = guessWord 
-console.log(guessWord, "This is the guess word")
+function renderGuessWord() {
+    wordSpaces.textContent = guessWord;
+    lossCounter.innerHTML = counter;
 }
-newRandomWord()
-
-//letters button responding to clicks
-document.querySelector("#letters").addEventListener("click", handleClick)
 
 //display users letter guess
 function handleClick(e) {
     let letter = e.target.textContent;
-     if (randomWord.includes(letter)) {
-        let correctWord = ""
-
-     //for loop to play letter at the specified index of the guess word.
+    if (randomWord.includes(letter)) {
+        let correctWord = "";
         for (let i = 0; i < randomWord.length; i++) {
             if (randomWord.charAt(i) === letter) {
-                correctWord += letter 
-            } else { 
-                correctWord += guessWord.charAt(i)
-            }   
+                correctWord += letter;
+
+            } else {
+                correctWord += guessWord.charAt(i);
+                incorrectGuesses.push(guessWord);
             }
-            guessWord = correctWord;
-                
         }
-
-
- renderguessWord()
+        guessWord = correctWord;
+    } else {
+        counter++;
     }
+    renderGuessWord();
+    winner();
+}
+
+function winner() {
+    // Logic for determining if user wins or lose.
+    if (guessWord === randomWord) {
+        winLogic.innerHTML = ("You Win!!!");
+        document.querySelector("#letters").removeEventListener("click", handleClick);
+    } else if (counter === 5) {
+        winLogic.innerHTML = ("You Lose :(");
+        document.querySelector("#letters").removeEventListener("click", handleClick);
+    }
+}
 ```
 
 3. CSS
