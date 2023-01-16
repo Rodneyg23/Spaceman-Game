@@ -2,6 +2,23 @@
 
 <img width="1394" alt="Screen Shot 2023-01-13 at 7 25 20 AM" src="https://user-images.githubusercontent.com/120343857/212581205-7f787152-d1dc-41e6-a3c8-aa0e79b0a891.png">
 
+Play Spaceman Here: https://rodneyg23.github.io/Spaceman-Game/
+
+Description
+```
+Spaceman is a game where you will have an limited amount of tries to guess the letter to a a mystery word.
+Once you guess the correct word, you win the game.
+```
+How To Play
+```
+-Select "Start Game" and begin to choose from the letter bank to see you if you can guess the mystery word.
+-If you can guess the mystery word then, you win!
+-You will be allowed 5 incorrect letter guesses and after that, you lose the game.
+-After you either win or lose, you will simply select "Clear Game" to clear the board and then select "Start Game again to being a new game!
+
+Good Luck
+```
+
 
 
 1. HTML
