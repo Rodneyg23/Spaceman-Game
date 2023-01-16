@@ -18,6 +18,12 @@ How To Play
 
 Good Luck
 ```
+Technologies Used:
+```
+HTML
+CSS
+Javascript
+```
 
 
 
